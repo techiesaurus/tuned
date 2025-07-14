@@ -9,8 +9,10 @@ available on [GitHub](https://github.com/redhat-performance/tuned).
 
 Patches should be created using `git` and the commit message should generally
 consist of three parts:
+
 1. The first line, which briefly describes the change that you are making.
 2. A detailed description of the change. This should include information
+
    about the purpose of the change, i.e. why you are making the change in
    the first place. For example, if your patch addresses a bug, give
    a description of the bug and a way to reproduce it, if possible. If your
@@ -37,7 +39,9 @@ consist of three parts:
    the following notation:
 
    `Fixes #95`
+
 3. Your sign-off. Every commit needs to have a `Signed-off-by` tag at the end
+
    of the commit message, indicating that the contributor of the patch agrees
    with the [Developer Certificate of Origin](/DCO). The tag should have the
    following format and it must include the real name and email address of

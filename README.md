@@ -13,20 +13,26 @@ On Fedora, Red Hat Enterprise Linux, and their derivatives: install the ``tuned`
 (optionally ``tuned-utils``, ``tuned-utils-systemtap``, and ``tuned-profiles-compat``):
 
 ```bash
+
   # dnf install tuned
-```
+
+```bash
 
 After installation, start the ``tuned`` service:
 
 ```bash
+
   # systemctl start tuned
+
 ```
 
 You likely should run ``tuned`` whenever your machine boots:
 
 ```bash
+
   # systemctl enable tuned
-```
+
+```bash
 
 When the daemon is running you can easily control it using the ``tuned-adm``
 utility. This tool communicates with the daemon over DBus. Any user can
@@ -37,19 +43,25 @@ on the machine (X11, physical tty, but no SSH).
 To see the current active profile, run:
 
 ```bash
+
   # tuned-adm active
+
 ```
 
 To list all available profiles, run:
 
 ```bash
+
   # tuned-adm list
-```
+
+```bash
 
 To switch to a different profile, run:
 
 ```bash
+
   # tuned-adm profile <profile-name>
+
 ```
 
 The enabled profile is persisted into ``/etc/tuned/active_profile``, which
@@ -58,38 +70,51 @@ is read when the daemon starts or is restarted.
 To disable all tunings, run:
 
 ```bash
+
   # tuned-adm off
-```
+
+```bash
 
 To show information/description of given profile or current profile if no profile is specified, run:
 
 ```bash
+
   # tuned-adm profile_info
+
 ```
 
 To verify current profile against system settings, run:
 
 ```bash
+
   # tuned-adm verify
-```
+
+```bash
 
 To enable automatic profile selection, run:
 
 ```bash
+
   # tuned-adm auto_profile
+
 ```
 
 To show the current profile selection mode, run:
 
 ```bash
+
   # tuned-adm profile_mode
-```
+
+```bash
 
 To recommend a profile for a given system, run:
 
 ```bash
+
   # tuned-adm recommend
+
 ```
+
 Currently only static detection is
 implemented - it decides according to data in ``/etc/system-release-cpe`` and
 the output of ``virt-what``. The rules for autodetection are defined in the file
@@ -103,7 +128,6 @@ Available tunings
 
 We are currently working on many new tuning features. Some are described in
 the manual pages, some are yet undocumented.
-
 
 Authors
 -------
@@ -147,7 +171,6 @@ Full text of the license is enclosed in COPYING file.
 
 The Developer Certificate of Origin, distributed in the file 'DCO' is licensed
 differently, see the file for the text of the license.
-
 
 The icon:
 
