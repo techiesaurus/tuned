@@ -174,6 +174,6 @@ differently, see the file for the text of the license.
 
 The icon:
 
-The TuneD icon was created by Mariia Leonova <mleonova@redhat.com> and it is
+The Aspect-TuneD icon was created by Mariia Leonova <mleonova@redhat.com> and it is
 licensed under Creative Commons Attribution-ShareAlike 3.0 license
 (http://creativecommons.org/licenses/by-sa/3.0/legalcode).
